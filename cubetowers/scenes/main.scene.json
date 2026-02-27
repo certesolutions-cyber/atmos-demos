@@ -1,0 +1,2645 @@
+{
+  "gameObjects": [
+    {
+      "name": "Floor",
+      "id": 1,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              30,
+              0.10000000149011612,
+              30
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/floor.mat.json",
+            "material.albedo": [
+              0.30000001192092896,
+              0.30000001192092896,
+              0.3499999940395355,
+              1
+            ],
+            "material.metallic": 0.18,
+            "material.roughness": 0.44,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 5,
+            "material.texTilingY": 5,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.8,
+            "restitution": 0.1,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Camera",
+      "id": 2,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              4,
+              12
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "Camera",
+          "data": {
+            "fovY": 1,
+            "near": 0.1,
+            "far": 200,
+            "isMainCamera": true,
+            "clearColor": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "type": "BallShooter",
+          "data": {
+            "ballSpeed": 25,
+            "ballSize": 0.3,
+            "maxBalls": 30
+          }
+        },
+        {
+          "type": "MouseLook",
+          "data": {
+            "sensitivity": 0.001,
+            "minPitch": -1.4,
+            "maxPitch": 1.4
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack1_Cube1",
+      "id": 3,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -4,
+              0.550000011920929,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack1_Cube2",
+      "id": 4,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -4,
+              1.5499999523162842,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack1_Cube3",
+      "id": 5,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -4,
+              2.549999952316284,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack1_Cube4",
+      "id": 6,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -4,
+              3.549999952316284,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack1_Cube5",
+      "id": 7,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -4,
+              4.550000190734863,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube1",
+      "id": 8,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0.550000011920929,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube2",
+      "id": 9,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              1.5499999523162842,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube3",
+      "id": 10,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              2.549999952316284,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube4",
+      "id": 11,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              3.549999952316284,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube5",
+      "id": 12,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              4.550000190734863,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack2_Cube6",
+      "id": 13,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              5.550000190734863,
+              -5
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack3_Cube1",
+      "id": 14,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              4,
+              0.550000011920929,
+              -2
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack3_Cube2",
+      "id": 15,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              4,
+              1.5499999523162842,
+              -2
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack3_Cube3",
+      "id": 16,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              4,
+              2.549999952316284,
+              -2
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack3_Cube4",
+      "id": 17,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              4,
+              3.549999952316284,
+              -2
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack4_Cube1",
+      "id": 18,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -2,
+              0.550000011920929,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack4_Cube2",
+      "id": 19,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -2,
+              1.5499999523162842,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack4_Cube3",
+      "id": 20,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -2,
+              2.549999952316284,
+              -7
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube1",
+      "id": 21,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              0.550000011920929,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube2",
+      "id": 22,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              1.5499999523162842,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube3",
+      "id": 23,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              2.549999952316284,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube4",
+      "id": 24,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              3.549999952316284,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube5",
+      "id": 25,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              4.550000190734863,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube6",
+      "id": 26,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              5.550000190734863,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stack5_Cube7",
+      "id": 27,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              3,
+              6.550000190734863,
+              -6
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/cube.mat.json",
+            "material.albedo": [
+              0.8999999761581421,
+              0.6000000238418579,
+              0.20000000298023224,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "dynamic",
+            "linearDamping": 0.1,
+            "angularDamping": 0.1,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.6,
+            "restitution": 0.05,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cube",
+      "id": 28,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -14.702086448669434,
+              5.017430305480957,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              10,
+              30
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/default.mat.json",
+            "material.albedo": [
+              0.699999988079071,
+              0.699999988079071,
+              0.699999988079071,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cube (Copy)",
+      "id": 29,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              14.484001159667969,
+              5.017430305480957,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              1,
+              10,
+              30
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cube",
+            "materialSource": "materials/default.mat.json",
+            "material.albedo": [
+              0.699999988079071,
+              0.699999988079071,
+              0.699999988079071,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Spot Light",
+      "id": 30,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -13.0443115234375,
+              7.5701823234558105,
+              -4.673336982727051
+            ],
+            "rotation": [
+              -0.24179643392562866,
+              -0.6643006205558777,
+              -0.2419121116399765,
+              0.6646184325218201
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "SpotLight",
+          "data": {
+            "color": [
+              1,
+              1,
+              1
+            ],
+            "intensity": 5,
+            "range": 20,
+            "innerAngle": 0.4363323129985824,
+            "outerAngle": 0.6108652381980153,
+            "castShadows": true,
+            "shadowIntensity": 1,
+            "shadowResolution": 1024
+          }
+        },
+        {
+          "type": "TrackNearestBall",
+          "data": {
+            "maxRange": 20,
+            "slerpSpeed": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "SpotLight",
+      "id": 31,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              12.35551643371582,
+              2.5127453804016113,
+              5.077148914337158
+            ],
+            "rotation": [
+              2.763414919115803e-8,
+              0.5,
+              2.763414919115803e-8,
+              0.8660253882408142
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "SpotLight",
+          "data": {
+            "color": [
+              1,
+              1,
+              1
+            ],
+            "intensity": 5,
+            "range": 20,
+            "innerAngle": 0.4363323129985824,
+            "outerAngle": 0.6108652381980153,
+            "castShadows": true,
+            "shadowIntensity": 1,
+            "shadowResolution": 1024
+          }
+        },
+        {
+          "type": "TrackNearestBall",
+          "data": {
+            "maxRange": 20,
+            "slerpSpeed": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "id": 32,
+      "parentId": 30,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0.7071067690849304,
+              0,
+              0,
+              0.7071067690849304
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cylinder",
+            "materialSource": "materials/metal.mat.json",
+            "material.albedo": [
+              0.10588235408067703,
+              0.10588235408067703,
+              0.13725490868091583,
+              1
+            ],
+            "material.metallic": 1,
+            "material.roughness": 0.3,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "DirectionalLight",
+      "id": 33,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              -0.6427876353263855,
+              0,
+              0,
+              0.7660444378852844
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "DirectionalLight",
+          "data": {
+            "color": [
+              1,
+              1,
+              1
+            ],
+            "intensity": 0.2,
+            "castShadows": true,
+            "shadowIntensity": 0.2,
+            "shadowResolution": 2048,
+            "shadowSize": 10,
+            "shadowDistance": 20,
+            "shadowFarSize": 30,
+            "shadowFarDistance": 200
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "id": 34,
+      "parentId": 31,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0.7071067690849304,
+              -1.430448826056363e-8,
+              -1.430448826056363e-8,
+              0.7071067690849304
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cylinder",
+            "materialSource": "materials/metal.mat.json",
+            "material.albedo": [
+              0.10588235408067703,
+              0.10588235408067703,
+              0.13725490868091583,
+              1
+            ],
+            "material.metallic": 1,
+            "material.roughness": 0.3,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sphere",
+      "id": 35,
+      "parentId": 32,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              -0.20000000298023224,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:sphere",
+            "materialSource": "materials/light.mat.json",
+            "material.albedo": [
+              0.699999988079071,
+              0.699999988079071,
+              0.699999988079071,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0.9803921580314636,
+              0.9960784316062927,
+              0.7450980544090271
+            ],
+            "material.emissiveIntensity": 1,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sphere",
+      "id": 36,
+      "parentId": 34,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              -0.20000000298023224,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:sphere",
+            "materialSource": "materials/light.mat.json",
+            "material.albedo": [
+              0.699999988079071,
+              0.699999988079071,
+              0.699999988079071,
+              1
+            ],
+            "material.metallic": 0,
+            "material.roughness": 0.5,
+            "material.emissive": [
+              0.9803921580314636,
+              0.9960784316062927,
+              0.7450980544090271
+            ],
+            "material.emissiveIntensity": 1,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "id": 37,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              -13.421716690063477,
+              3.682758092880249,
+              -4.673336982727051
+            ],
+            "rotation": [
+              -0.000003326703108541551,
+              7.047795235869819e-15,
+              2.3445922321694125e-20,
+              1
+            ],
+            "scale": [
+              0.10000000149011612,
+              8,
+              0.10000000149011612
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cylinder",
+            "materialSource": "materials/metal.mat.json",
+            "material.albedo": [
+              0.10588235408067703,
+              0.10588235408067703,
+              0.13725490868091583,
+              1
+            ],
+            "material.metallic": 1,
+            "material.roughness": 0.3,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cylinder",
+      "id": 38,
+      "parentId": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              12.51623821258545,
+              1.1539748907089233,
+              5.2700629234313965
+            ],
+            "rotation": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "scale": [
+              0.10000000149011612,
+              3,
+              0.10000000149011612
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "meshSource": "primitive:cylinder",
+            "materialSource": "materials/metal.mat.json",
+            "material.albedo": [
+              0.10588235408067703,
+              0.10588235408067703,
+              0.13725490868091583,
+              1
+            ],
+            "material.metallic": 1,
+            "material.roughness": 0.3,
+            "material.emissive": [
+              0,
+              0,
+              0
+            ],
+            "material.emissiveIntensity": 0,
+            "material.texTilingX": 1,
+            "material.texTilingY": 1,
+            "castShadow": true,
+            "receiveSSAO": true
+          }
+        },
+        {
+          "type": "RigidBody",
+          "data": {
+            "bodyType": "fixed",
+            "linearDamping": 0,
+            "angularDamping": 0,
+            "gravityScale": 1,
+            "interpolate": false
+          }
+        },
+        {
+          "type": "Collider",
+          "data": {
+            "friction": 0.3,
+            "restitution": 0.3,
+            "density": 1,
+            "isSensor": false
+          }
+        }
+      ]
+    }
+  ],
+  "postProcess": {
+    "bloomIntensity": 0.8,
+    "bloomThreshold": 1,
+    "bloomRadius": 0.5,
+    "ssaoEnabled": true,
+    "ssaoRadius": 0.5,
+    "ssaoBias": 0.025,
+    "ssaoIntensity": 1.5,
+    "exposure": 1,
+    "vignetteIntensity": 0.8,
+    "vignetteRadius": 0.75,
+    "fogEnabled": true,
+    "fogMode": "linear",
+    "fogDensity": 0.02,
+    "fogStart": 20,
+    "fogEnd": 30,
+    "fogColor": [
+      0,
+      0,
+      0
+    ]
+  }
+}

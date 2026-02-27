@@ -1,0 +1,22 @@
+{
+  "name": "Floor",
+  "shader": "pbr",
+  "albedo": [
+    0.3,
+    0.3,
+    0.35,
+    1
+  ],
+  "metallic": 0.18,
+  "roughness": 0.44,
+  "albedoTexture": "textures/asphalt.jpg",
+  "emissive": [
+    0,
+    0,
+    0
+  ],
+  "emissiveIntensity": 0,
+  "normalTexture": "textures/asphalt_normal.jpg",
+  "texTilingX": 5,
+  "texTilingY": 5
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ball",
+  "shader": "pbr",
+  "albedo": [0.8, 0.1, 0.1, 1.0],
+  "metallic": 0.8,
+  "roughness": 0.2,
+  "emissive": [0.5, 0.05, 0.05],
+  "emissiveIntensity": 0.5
+}

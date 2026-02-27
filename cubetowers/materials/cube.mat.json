@@ -1,0 +1,9 @@
+{
+  "name": "Cube",
+  "shader": "pbr",
+  "albedo": [0.9, 0.6, 0.2, 1.0],
+  "metallic": 0.0,
+  "roughness": 0.5,
+  "emissive": [0, 0, 0],
+  "emissiveIntensity": 0
+}
