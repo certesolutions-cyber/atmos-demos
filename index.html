@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atmos Demos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 4rem 2rem;
+    }
+    header {
+      max-width: 720px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    header p {
+      margin-top: 0.5rem;
+      color: #888;
+      font-size: 1rem;
+    }
+    .demos {
+      max-width: 720px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+    .demo-card {
+      display: block;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .demo-card:hover {
+      border-color: #555;
+      background: #222;
+    }
+    .demo-card h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .demo-card p {
+      font-size: 0.9rem;
+      color: #999;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Atmos Demos</h1>
+    <p>A collection of interactive demos built with Atmos Engine.</p>
+  </header>
+  <div class="demos">
+    <a class="demo-card" href="cubetowers/">
+      <h2>Cube Towers</h2>
+      <p>Knock down towers built from cubes by shooting balls at them. Aim carefully and try to topple every tower with as few shots as possible.</p>
+    </a>
+  </div>
+</body>
+</html>
